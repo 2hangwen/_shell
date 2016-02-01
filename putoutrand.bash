@@ -14,6 +14,7 @@ do
         ((--len))
         echo $i
         for n in $(seq $len)
+        #seq产生一个数组,for来遍历这个数组
         do
           echo $i | grep ^0 ; [ $? -eq 0 ] && i=${i#*0}
           #将数字前的"0"去掉
