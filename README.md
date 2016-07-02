@@ -1,4 +1,4 @@
-<scripts>
+<scripts type="javescript">
 function fun_h1(){
 	alert("hello");
 }
