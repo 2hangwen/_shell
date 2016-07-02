@@ -14,10 +14,10 @@ LANG=C sed -i 's/[\x81-\xfe][\x40-\xfe]//g' key.txt
 sed -i 's/.*href=//' key.txt
 sed -i 's/title.*//' key.txt
 
-统计行数
+#统计行数
 c=$(cat key.txt | wc -l)
 
-行数如果为2
+#行数如果为2
 if [ $c = 2 ]; then
   
   #取文件的第一行
